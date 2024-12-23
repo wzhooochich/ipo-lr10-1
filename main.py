@@ -9,7 +9,7 @@ page = requests.get(url)
 
 # переменные json и html файлов
 file_json='data.json'
-file_html='website.html'
+file_html='index.html'
 
 # списки
 quote_list= [] # цитаты
