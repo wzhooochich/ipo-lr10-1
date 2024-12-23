@@ -41,32 +41,8 @@ with open(file_json,'w+',encoding='utf-8') as file:
 
 # оформление таблицы и запись в html файл информации из json файла 
 with open(file_html, "w+", encoding="utf-8") as file:
-    file.write("<!DOCTYPE html>\n")
-    file.write('<html lang="ru">\n')
-    file.write("<head>\n")
-    file.write("<meta charset='UTF-8'>\n")
-    file.write("<title>Quotes</title>\n")
-    file.write("</head>\n")
-    file.write("<body>\n")
 
-    file.write(
-        '<h1><p align="center"> <a href="https://quotes.toscrape.com/" style="color:#2196F3;">Великие цитаты</a></h1></p>\n'
-    )
-    file.write('<body bgcolor="#F0F8FF">\n')
 
-    file.write(
-        '<table cellspacing="2" bordercolor="#9C27B0" BGCOLOR="#E1BEE7" border="1" align="center" style="width:80%; font-family: Arial, sans-serif;">\n'
-    )
-    file.write("<thead>\n")
-    file.write("<tr>\n")
-    file.write(
-        '<th style="padding:10px; color:#4A148C; font-size: 1.1em;">Номер</th>\n'
-    )
-    file.write(
-        '<th style="padding:10px; color:#4A148C; font-size: 1.1em;">Цитата и Автор</th>\n'
-    )
-    file.write("</tr>\n")
-    file.write("</thead>\n")
     file.write("<tbody>\n")
 
     with open(file_json, "r", encoding="utf-8") as input:
@@ -81,6 +57,3 @@ with open(file_html, "w+", encoding="utf-8") as file:
 
 
     file.write("</tbody>\n")
-    file.write("</table>\n")
-    file.write("</body>\n")
-    file.write("</html>\n")
